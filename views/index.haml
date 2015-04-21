@@ -1,8 +1,6 @@
-!!!
-%html
-  %head
-    %title Mon blog
-  %body
-    - @articles.each do |article|
+- @articles.each do |article|
+  .row
+    .col-xs-12
       %h1= article.title
-      = article.body
+      = article.body[0, 100]
+      %a{href: "/articles/#{article.number}"} Read more
