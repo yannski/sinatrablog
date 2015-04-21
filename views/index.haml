@@ -1,0 +1,8 @@
+!!!
+%html
+  %head
+    %title Mon blog
+  %body
+    - @articles.each do |article|
+      %h1= article.title
+      = article.body
