@@ -6,7 +6,7 @@ class Article
 
   def self.load_all
     numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-    articles_array = numbers.map{|i|
+    articles_array = numbers.reverse.map{|i|
       lines = File.readlines("articles/#{i}.txt")
       title = lines.shift
       body = lines.join("\n")
