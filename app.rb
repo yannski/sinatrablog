@@ -13,7 +13,7 @@ class Article
       article = Article.new
       article.title = title
       article.body = body
-      return article
+      article
     }
     return articles_array
   end
